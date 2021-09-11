@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="12" failures="0" name="fundtransfer.RunCukesTest" time="0.192" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="13.0.1+9"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/salah/eclipse-workspace/FundTransfer"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/salah/eclipse-workspace/FundTransfer"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="13.0.1+9"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/l0/4653q0y52zgdp6280q3jbm4w0000gp/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/salah/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8348349046488012870.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/salah/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="57.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/salah"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="13"/>
+    <property name="user.name" value="salah"/>
+    <property name="java.class.path" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.18.0.20210603-1206/jars/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="13.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/salah/eclipse-workspace/FundTransfer/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-10-15"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="Scenario: Valid Payee" name="Given the user is on Fund Transfer Page" time="0.006"/>
+  <testcase classname="Scenario: Valid Payee" name="When he enters &quot;Jim&quot; as payee name" time="0"/>
+  <testcase classname="Scenario: Valid Payee" name="And he enters &quot;100&quot; as amount" time="0"/>
+  <testcase classname="Scenario: Valid Payee" name="And he submits request for Fund Transfer" time="0"/>
+  <testcase classname="Scenario: Valid Payee" name="Then ensure the fund transfer is complete with &quot;$100 transferred successfully to Jim!!&quot; message" time="0"/>
+  <testcase classname="Scenario: Valid Payee" name="Scenario: Valid Payee" time="0.091"/>
+  <testcase classname="| Tim | 100000 | Transfer failed!! account cannot be overdrawn |" name="Given the user is on Fund Transfer Page" time="0"/>
+  <testcase classname="| Tim | 100000 | Transfer failed!! account cannot be overdrawn |" name="When he enters &quot;Tim&quot; as payee name" time="0"/>
+  <testcase classname="| Tim | 100000 | Transfer failed!! account cannot be overdrawn |" name="And he enters &quot;100000&quot; as amount" time="0"/>
+  <testcase classname="| Tim | 100000 | Transfer failed!! account cannot be overdrawn |" name="And he submits request for Fund Transfer" time="0.001"/>
+  <testcase classname="| Tim | 100000 | Transfer failed!! account cannot be overdrawn |" name="Then ensure a transaction failure &quot;Transfer failed!! account cannot be overdrawn&quot; is displayed" time="0"/>
+  <testcase classname="| Tim | 100000 | Transfer failed!! account cannot be overdrawn |" name="| Tim | 100000 | Transfer failed!! account cannot be overdrawn |" time="0.094"/>
+</testsuite>
